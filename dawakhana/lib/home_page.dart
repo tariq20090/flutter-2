@@ -157,9 +157,9 @@ class _HomePageState extends State<HomePage> {
                 textAlign: TextAlign.center,
               ),
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [
+              children: [
                 Icon(Icons.local_hospital, color: Colors.blue, size: 30),
                 Icon(Icons.healing, color: Colors.green, size: 30),
                 Icon(Icons.vaccines, color: Colors.red, size: 30),

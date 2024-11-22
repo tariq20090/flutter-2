@@ -26,7 +26,7 @@ class _FullScreenSplashState extends State<FullScreenSplash> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/images/splash1.jpg"),
             fit: BoxFit.cover,
@@ -67,7 +67,7 @@ class _SplashScreenState extends State<SplashScreen> {
         onTap: () {
           if (_currentPage < 2) {
             _pageController.nextPage(
-              duration: Duration(milliseconds: 300),
+              duration: const Duration(milliseconds: 300),
               curve: Curves.ease,
             );
           }

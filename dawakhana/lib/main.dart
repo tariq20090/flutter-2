@@ -5,7 +5,7 @@ import 'home_page.dart';
 import 'cart_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -17,11 +17,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => SplashScreen(),
+        '/': (context) => const SplashScreen(),
         
-        '/login': (context) => LoginScreen(),
-        '/home': (context) => HomePage(),
-        '/cart': (context) => CartScreen(),
+        '/login': (context) => const LoginScreen(),
+        '/home': (context) => const HomePage(),
+        '/cart': (context) => const CartScreen(),
       },
     );
   }
